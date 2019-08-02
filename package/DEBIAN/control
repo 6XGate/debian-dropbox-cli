@@ -1,0 +1,10 @@
+Package: dropbox-cli
+Version: 2019.02.14
+Section: net
+Priority: optional
+Maintainer: Matthew Holder <sixxgate@hotmail.com>
+Architecture: all
+Depends: python3
+Breaks: dropbox, nautilus-dropbox
+Description: Dropbox command-line interface.
+ Provides a command-line interface to the Dropbox daemon.

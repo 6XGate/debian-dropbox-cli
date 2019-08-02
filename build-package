@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+WORKDIR=$(dirname "$0")
+OUTDIR="$WORKDIR/bin"
+mkdir -p "$OUTDIR"
+fakeroot dpkg-deb --build "$WORKDIR/package" "$OUTDIR/dropbox-cli.deb"
