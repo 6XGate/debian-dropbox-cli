@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    remove)
+	dropbox stop || true
+	killall dropbox || true
+    ;;
+esac
+
+exit 0
